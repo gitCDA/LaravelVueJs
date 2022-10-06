@@ -12,14 +12,14 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
         
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ mix('js/app.js') }}" defer></script>
         {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 
     </head>
-    <body class="font-sans antialiased" id="root">
+    <body class="font-sans antialiased" id="app">
         <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')
 
@@ -35,5 +35,12 @@
                 {{ $slot }}
             </main>
         </div>
+
+        {{-- <div id="app">
+            <button v-on:click.prevent="btnClick">
+                cctktkgugj
+            </button>
+        </div> --}}
+
     </body>
 </html>

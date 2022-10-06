@@ -42,9 +42,9 @@
                                     </div>
                                 </div> --}}
 
-                                <div id="app">
-                                    <add-to-cart :product-id="{{ $product->id }}"></add-to-cart>
-                                </div>
+                                    <add-to-cart :product-id="{{ $product->id }}">
+                                    </add-to-cart>
+                                
                                     {{-- <div class="flex items-center justify-between py-4">
                                     <button class="bg-indigo-500 text-white p-2">
                                         Ajouter au panier

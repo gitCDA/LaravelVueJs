@@ -1,15 +1,28 @@
 import './bootstrap';
+import '../css/app.css';
 
 import Alpine from 'alpinejs';
 import { createApp } from 'vue';
-import addToCart from './components/AddToCart.vue'
+import AddToCart from './components/AddToCart.vue'
 
 window.Alpine = Alpine;
 
 Alpine.start();
 
 const app = createApp();
+// createApp({
+//     data() {
+//         console.log('first')
+//       return {
+//         count: 0
+//       }
+//     }
+//   }).mount('#app')
 
-new app.component('addToCart', addToCart);
+// const btnClick = () => { 
+//     console.log('2nd')
+//  }
 
-app.mount('#root');
+app._component('AddToCart', AddToCart);
+
+app.mount('#app');
