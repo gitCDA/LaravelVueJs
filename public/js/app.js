@@ -24251,7 +24251,7 @@ window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_1__["default"];
 alpinejs__WEBPACK_IMPORTED_MODULE_1__["default"].start();
 var app = (0,vue__WEBPACK_IMPORTED_MODULE_2__.createApp)();
 new app.component('addToCart', _components_AddToCart_vue__WEBPACK_IMPORTED_MODULE_3__["default"]);
-app.mount('#app');
+app.mount('#root');
 
 /***/ }),
 

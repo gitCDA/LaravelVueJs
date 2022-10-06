@@ -12,4 +12,4 @@ const app = createApp();
 
 new app.component('addToCart', addToCart);
 
-app.mount('#app');
+app.mount('#root');
