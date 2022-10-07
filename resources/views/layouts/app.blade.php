@@ -14,33 +14,30 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         
-        <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
         {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
-
+            
+        <!-- Scripts -->
+        <script src="{{mix('js/app.js')}}" defer ></script>
+                
     </head>
-    <body class="font-sans antialiased" id="app">
+    <body class="font-sans antialiased">
+        
         <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')
-
+            
             <!-- Page Heading -->
             <header class="bg-white shadow">
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ $header }}
+                    {{-- {{ $header }} --}}
                 </div>
             </header>
-
+            
             <!-- Page Content -->
             <main>
                 {{ $slot }}
             </main>
         </div>
 
-        {{-- <div id="app">
-            <button v-on:click.prevent="btnClick">
-                cctktkgugj
-            </button>
-        </div> --}}
-
     </body>
-</html>
+    
+    </html>

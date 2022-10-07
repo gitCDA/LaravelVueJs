@@ -1,6 +1,6 @@
 <template>
 
-    <div class="flex items-center justify-between py-4 h-5 w-5" id="{{ $product->id }}">
+    <div class="flex items-center justify-between py-4">
         <button class="bg-indigo-500 text-white p-2"
             v-on:click.prevent="addToCart">
             Ajouter au panier
@@ -9,7 +9,7 @@
 
 </template>
 
-<script>
+<script setup>
 
     const addToCart = () => {
         console.log('added');

@@ -9,20 +9,6 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
-const app = createApp();
-// createApp({
-//     data() {
-//         console.log('first')
-//       return {
-//         count: 0
-//       }
-//     }
-//   }).mount('#app')
-
-// const btnClick = () => { 
-//     console.log('2nd')
-//  }
-
-app._component('AddToCart', AddToCart);
+const app = createApp(AddToCart);
 
 app.mount('#app');
